@@ -173,7 +173,7 @@ footer{
 
 select {
   padding: .8rem .2rem .8rem 2rem;background-color: rgba(0, 0, 0, .75);
-  background-image: url("./Assets/outline_earth.svg");
+  background-image: url("../Assets/outline_earth.svg");
   background-repeat: no-repeat;
   background-position: 0.4em center;
   font-size: .8rem;
@@ -216,4 +216,25 @@ select {
   .form-section{
     padding: 3rem 2rem;
   }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  header{
+    padding: 1rem 2rem;
+  }
+  .form-section {
+    padding: 3rem 1.5rem;
+    width: 80%;
+    margin-top: 5rem;
+  }
+  .container-ft{
+    width: 80%;
+  }
+  .options-ft > div{
+    width: 50%;
+  }
+  .options-ft{
+    flex-wrap: wrap;
+  }
+
 }
