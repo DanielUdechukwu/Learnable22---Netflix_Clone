@@ -252,11 +252,14 @@ select {
     width: 5rem;
   }
   .form-section{
-    padding: 0 1.5rem;
+    padding: 4rem 1.5rem;
   }
   .phone h4{
     font-size: 1rem;
     padding: 1.5rem 0;
+  }
+  .options{
+    padding-bottom: 2rem;
   }
   .options-ft > div{
     width: 50%;
