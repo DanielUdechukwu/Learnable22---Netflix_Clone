@@ -64,18 +64,11 @@ select {
   transition: all ease-in-out 0.1s;
 }
 
-.btnn{
-  padding: .7rem .1rem .75rem .8rem;
-  border-radius: 0 2px 2px 0 ;
-  width: 25%;
-  
-}
-
 .hero-section{
   padding: 6rem 0;
 }
 
-.hero-section h1{
+.hero-text h1{
   font-size: 2.8rem;
   font-weight: 700;
 }
@@ -88,26 +81,51 @@ select {
 }
 
 .newsletter{
-  width: 35%;
+  width: 40%;
+  display: flex;
   margin: 0 auto;
 }
 
+.input-div{
+  width: 70%;
+  height: 3.5rem;
+}
+
+.button-div{
+  width: 30%;
+  height: 3.5rem;
+}
+
 .newsletter input{
-  width: 75%;
+  width: 100%;
   border: none;
   outline: none;
-  padding: .85rem .1rem .8rem .8rem;
+  padding: 0 5%;
+  height: 100%;
   border-radius: 2px 0 0 2px;
   font-family: 'Nunito Sans';
   font-weight: 600;
   font-size: .7rem;
 }
 
+.btnn {
+  height: 100%;
+  border-radius: 0 2px 2px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #e50914;
+  color: #fff;
+  font-family: 'Nunito Sans';
+  padding: 0 5%;
+  font-size: 1rem;
+}
+
 .btn-content{
   display: flex;
   gap: .5rem;
-  /* padding-left: .5rem; */
   align-items: center;
+  justify-content: center;
 }
 
 .right-arrow{
@@ -136,7 +154,7 @@ select {
 .downloads-img img,
 .devices-img img,
 .kids-img img{
-  height: 20rem;
+  width: 100%;
 }
 
 .description h2{
@@ -207,6 +225,7 @@ select {
 
 .accordion.active::after{
   content: '-';
+  right: .2rem;
 }
 
 .membership h5{
@@ -248,11 +267,182 @@ footer {
   cursor: pointer;
 }
 
-.options-ft>div {
+.col {
   width: 25%;
 }
 
 .col h4 {
   margin-bottom: .8rem;
   font-size: .8rem;
+}
+
+@media (min-width: 1440px){
+  .platforms,
+  .downloads,
+  .devices,
+  .kids {
+    width: 60%;
+  }
+  .accordion-div{
+    width: 40%;
+  }
+}
+
+@media (max-width: 949px){
+  .select{
+    display: none;
+  }
+  nav{
+    padding: 2rem 2.5rem;
+  }
+  .hero-text{
+    width: 70%;
+  }
+  .hero-text h4{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+  }
+  .hero-text h5{
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: 65%;
+    margin: 0 auto;
+  }
+  .newsletter{
+    width: 55%;
+    flex-direction: column;
+  }
+  .input-div{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .button-div{
+    margin: 0 auto;
+    height: 2.5rem;
+    width: 8rem;
+  }
+  .input-div input{
+    border-radius: 2px;
+  }
+  .btnn{
+    border-radius: 2px;
+  }
+  .platforms,
+  .devices{
+    flex-direction: column;
+    padding: 4rem 0 1rem 0;
+  }
+  .downloads,
+  .kids{
+    flex-direction: column-reverse;
+    padding: 4rem 0 1rem 0;
+  }
+  .description h2{
+    text-align: center;
+  }
+  .description h3{
+    text-align: center;
+    width: 100%;
+  }
+  .FAQ{
+    padding-top: 1.5rem;
+  }
+  .FAQ h2{
+    font-size: 2.3rem;
+    padding-bottom: 1rem;
+  }
+  .accordion-div{
+    width: 80%;
+  }
+  .accordion{
+    padding: 1rem .7rem;
+  }
+  .accordion::after{
+    bottom: 0.8rem;
+  }
+  .membership h5{
+    font-size: 1.3rem;
+    width: 50%;
+  }
+  .container-ft{
+    width: 80%;
+  }
+}
+
+@media (max-width: 549px) {
+  nav{
+    padding: 1.5rem 5%;
+  }
+  .logo{
+    width: 5rem;
+    margin-left: .5rem;
+  }
+  .btn{
+    padding: .3rem .5rem;
+  }
+  .hero-section{
+    padding: 3rem 0;
+  }
+  .hero-text{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero-text h1{
+    font-size: 1.7rem;
+    padding-bottom: .6rem;
+  }
+  .hero-text h4{
+    font-size: 1rem;
+  }
+  .hero-text h5{
+    font-size: 1rem;
+    width: 70%;
+  }
+  .newsletter{
+    width: 90%;
+  }
+  .input-div{
+    height: 3rem;
+  }
+  .platforms,
+  .downloads,
+  .devices,
+  .kids{
+    width: 90%;
+  }
+  .description h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .description h3{
+    width: 100%;
+    font-size: 1rem;
+  }
+  .FAQ h2{
+    font-size: 1.5rem;
+  }
+  .accordion-main{
+    padding-bottom: 1rem;
+  }
+  .accordion{
+    font-size: 1rem;
+  }
+  .accordion-div{
+    width: 100%;
+  }
+  .membership h5{
+    width: 75%;
+    font-size: .9rem;
+  }
+  .phone h4{
+    padding: 3rem 0 1rem 0;
+  }
+  .options-ft{
+    flex-wrap: wrap;
+  }
+  .col{
+    width: 33%;
+  }
 }

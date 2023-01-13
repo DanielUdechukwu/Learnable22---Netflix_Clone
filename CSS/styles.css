@@ -28,6 +28,8 @@ body{
 
 header{
   padding: 1rem 3rem;
+  /* Made a change for bigger screen */
+  margin-bottom: 2.6rem;
 }
 
 .logo{
