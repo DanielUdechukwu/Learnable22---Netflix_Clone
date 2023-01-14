@@ -121,8 +121,7 @@ button:hover{
     width: 90%;
   }
   .profile-select{
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(2, 2fr);
   }
   .profile-options{
     margin-bottom: 2rem;
