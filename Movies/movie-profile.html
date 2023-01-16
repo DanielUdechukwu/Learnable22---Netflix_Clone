@@ -69,6 +69,32 @@
           </button>
         </div>
       </div>
+
+      <div class="popular">
+        <h3>Netflix'te Popüler</h3>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../Assets/New Amsterdam.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/Modern family.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/Leyla.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/50meters.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/Brooklyn 99.png" alt="">
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
     </section>
   </main>
   
@@ -76,9 +102,9 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 30,
+        slidesPerView: "4",
+        // centeredSlides: true,
+        spaceBetween: 5,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

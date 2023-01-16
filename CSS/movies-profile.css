@@ -138,3 +138,8 @@ button:hover{
 .info h4{
   font-size: 1rem;
 }
+
+.popular{
+  width: 90%;
+  margin: 0 auto;
+}
