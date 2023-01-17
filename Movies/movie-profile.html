@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Netflix</title>
+  <link rel="icon" type="image/x-icon" href="../Assets/nficon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../CSS/movies-profile.css">
 </head>
@@ -187,6 +188,95 @@
           <div class="swiper-button-prev"></div>
         </div>
       </div>
+
+      <div>
+        <h3>Türkiye'de Bugünün Top 10 Listesi</h3>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../Assets/one.svg" alt="">
+              <img src="../Assets/Nobetc.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/two.svg" alt="">
+              <img src="../Assets/Gozlerinin.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/three.svg" alt="">
+              <img src="../Assets/Amsterdam.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/four.svg" alt="">
+              <img src="../Assets/Kal.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/five.svg" alt="">
+              <img src="../Assets/Gin.png" alt="">
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-max">
+      <div>
+        <h3>Yeniden İzle</h3>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../Assets/Brooklyn 99.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/HIMYM.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/Harry potter.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/Rick and morty.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/HTGAWM.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/Lupin.png" alt="">
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="audio">
+      <div class="listen">
+        <h3>Listen</h3>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../Assets/Witcher.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/Eglenceli.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/Orphan black.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/Sir.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../Assets/Davinci.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
     </section>
   </main>
   
@@ -206,7 +296,109 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
       },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 5,
+          centeredSlides: true,
+        },
+        350: {
+          slidesPerView: 1.1,
+          spaceBetween: 5,
+          // centeredSlides: true,
+        },
+        400: {
+          slidesPerView: 1.2,
+          spaceBetween: 5,
+        },
+        450: {
+          slidesPerView: 1.4,
+          spaceBetween: 5,
+        },
+        600: {
+          slidesPerView: 1.6,
+          spaceBetween: 5,
+        },
+        650: {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },
+        768: {
+          slidesPerView: 2.3,
+          spaceBetween: 5,
+        },
+        900: {
+          slidesPerView: 2.5,
+          spaceBetween: 5,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 5,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 5,
+        },
+      },
       });
+
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: "5",
+        spaceBetween: 5,
+        loop: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 5,
+          // centeredSlides: true,
+        },
+        340: {
+          slidesPerView: 1.1,
+          spaceBetween: 5,
+          // centeredSlides: true,
+        },
+        400: {
+          slidesPerView: 1.2,
+          spaceBetween: 5,
+        },
+        450: {
+          slidesPerView: 1.4,
+          spaceBetween: 5,
+        },
+        600: {
+          slidesPerView: 1.6,
+          spaceBetween: 5,
+        },
+        650: {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },
+        768: {
+          slidesPerView: 2.3,
+          spaceBetween: 5,
+        },
+        900: {
+          slidesPerView: 2.5,
+          spaceBetween: 5,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 5,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 5,
+        },
+      },
+      });  
   </script>
 </body>
 </html>
