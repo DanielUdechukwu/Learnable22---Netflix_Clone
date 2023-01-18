@@ -174,8 +174,48 @@ button:hover{
   margin: 0 auto;
 }
 
-@media (max-width: 768px){
+.container-ft{
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
 
+.social{
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.social img:hover{
+  cursor: pointer;
+}
+
+.footer-nav{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.links h4{
+  margin-bottom: 1.2rem;
+  color: #808080;
+}
+
+.links h4:hover,
+footer h3:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer button{
+  border: 1px solid #808080;
+  background: none;
+  border-radius: 0;
+  margin: 1rem 0 1.5rem 0;
+}
+
+footer h3{
+  color: #808080;
+  font-size: 1rem;
 }
 
 
@@ -212,6 +252,12 @@ button:hover{
     width: 90%;
     margin: 0 auto;
   }
+  .container-ft{
+    width: 90%;
+  }
+  .footer-nav {
+    grid-template-columns: repeat(2, 2fr);
+  }
 }
 
 @media (max-width: 420px) {
@@ -228,6 +274,9 @@ button:hover{
   .top-10-description{
     width: 100%;
   }
+  footer h3{
+    font-size: .8rem;
+  }
 }
 
 @media (max-width: 380px){
@@ -239,5 +288,8 @@ button:hover{
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+  footer h3{
+    font-size: .7rem;
   }
 }
